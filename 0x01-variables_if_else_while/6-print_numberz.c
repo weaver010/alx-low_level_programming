@@ -7,9 +7,12 @@
  */
 int main(void)
 {
-	int a;
+	int n;
 
-	putchar('0123456789');
+	for (n = 48; n < 58; n++)
+	{
+		putchar(n);
+	}
 	putchar('\n');
 	return (0);
 }
