@@ -10,6 +10,6 @@ int main(void)
 	int a;
 
 	putchar('0123456789');
-	putchar('\n')
+	putchar('\n');
 	return (0);
 }
