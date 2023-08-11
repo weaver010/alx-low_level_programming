@@ -3,6 +3,12 @@
 #include <time.h>
 /* more headers goes there */
 
+
+/**
+ * main - Entry point
+ * check number if p or n or non
+ * Return: Always 0 (Success)
+ */
 /* betty style doc for function main goes there */
 int main(void)
 {
