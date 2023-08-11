@@ -19,7 +19,7 @@ int main(void)
 			p = 48;
 			for (p = 48; p < 58; p++)
 			{
-				if (n != k && n < K && k != p && k < p)
+				if (n != k && n < k && k != p && k < p)
 				{
 					putchar(n);
 					putchar(k);
