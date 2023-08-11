@@ -7,6 +7,8 @@
  */
 int main(void)
 {
-	putchar("abcdefghijklmnopqrstuvwxyz\n");
+	char a[] = "abcdefghijklmnopqrstuvwxyz";
+
+	putchar(a, "\n");
 	return (0);
 }
