@@ -17,17 +17,16 @@ int main(void)
 	long i;
 
 	i = 0;
-	num =1;
+	num = 1;
 	sum = 0;
 	for (n = 0; n < 50; n++)
 	{
 		if (n < 49)
 		{	
-		sum = (i + num);
-		i =num;
-		num = sum;
-		
-		printf("%lu, ", sum );
+			sum = (i + num);
+			i =num;
+			num = sum;
+			printf("%lu, ", sum );
 		}
 		else
 		{
@@ -35,5 +34,6 @@ int main(void)
 		}
 
 	}
+	printf("\n");
 	return (0);
 }
