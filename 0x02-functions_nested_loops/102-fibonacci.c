@@ -21,8 +21,8 @@ int main(void)
 	sum = 0;
 	for (n = 0; n < 50; n++)
 	{
-		if (n <= 48)
-		{	
+		if (n <= 49)
+		{
 			sum = (i + num);
 			printf("%lu, ", sum);
 			i = num;
