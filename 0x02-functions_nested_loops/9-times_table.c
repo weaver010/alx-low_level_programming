@@ -36,10 +36,13 @@ void times_table(void)
 			}
 			else
 			{
+				if (i != 0)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+				}
 				_putchar((n * i) + '0');
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
 			}
 		}
 	}
