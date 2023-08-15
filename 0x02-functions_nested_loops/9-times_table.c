@@ -24,7 +24,6 @@ void times_table(void)
 		}
 		for (i = 0; i <= 9; i++)
 		{
-			
 			if ((n * i) >= 10)
 			{
 				l_d = (n * i) % 10;
@@ -46,4 +45,5 @@ void times_table(void)
 			}
 		}
 	}
+	_putchar('\n');
 }
