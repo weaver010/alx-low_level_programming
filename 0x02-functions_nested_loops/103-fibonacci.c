@@ -20,12 +20,12 @@ int main(void)
 	n = 0;
 	sum = 0;
 
-	while(sum < 4000000)
+	while (sum < 4000000)
 	{
-		sum = i +n;
+		sum = i + n;
 		if (sum %  2== 0)
 		{
-			t = t +sum;
+			t = t + sum;
 		}
 		n = i;
 		i = sum;
