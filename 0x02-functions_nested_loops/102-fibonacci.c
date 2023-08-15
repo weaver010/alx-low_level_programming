@@ -21,7 +21,7 @@ int main(void)
 	sum = 0;
 	for (n = 0; n < 50; n++)
 	{
-		sum = (sum + num);
+		sum = (i + num);
 		i =num;
 		num = sum;
 
