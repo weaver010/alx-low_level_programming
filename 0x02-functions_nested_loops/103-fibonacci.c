@@ -16,19 +16,19 @@ int main(void)
 	long sum;
 	long t;
 
-	i=1;
-	n=0;
-	sum=0;
+	i = 1;
+	n = 0;
+	sum = 0;
 
 	while(sum < 4000000)
 	{
-		sum = i +n ;
-		if (sum%2==0)
+		sum = i +n;
+		if (sum %  2== 0)
 		{
-		t = t +sum;
+			t = t +sum;
 		}
-		n=i;
-		i=sum;
+		n = i;
+		i = sum;
 	}
 	printf("%lu\n", t);
 	return (0);
