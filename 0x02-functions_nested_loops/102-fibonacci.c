@@ -28,7 +28,7 @@ int main(void)
 			i = num;
 			num = sum;
 		}
-		else if (n == 49)
+		else if (n == 50)
 		{
 			printf("%lu", sum);
 		}
