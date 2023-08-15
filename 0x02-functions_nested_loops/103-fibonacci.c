@@ -23,7 +23,7 @@ int main(void)
 	while (sum < 4000000)
 	{
 		sum = i + n;
-		if (sum %  2== 0)
+		if (sum %  2 == 0)
 		{
 			t = t + sum;
 		}
