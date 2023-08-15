@@ -22,7 +22,7 @@ int main(void)
 	for (n = 0; n < 50; n++)
 	{
 			sum = (i + num);
-			printf(sum);
+			printf("%lu",sum);
 			i = num;
 			num = sum;
 			if (n != 49)
