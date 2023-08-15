@@ -24,9 +24,9 @@ int main(void)
 		if (n <= 48)
 		{	
 			sum = (i + num);
+			printf("%lu, ", sum);
 			i = num;
 			num = sum;
-			printf("%lu, ", sum);
 		}
 		else
 		{
