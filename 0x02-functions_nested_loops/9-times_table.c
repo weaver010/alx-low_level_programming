@@ -31,6 +31,10 @@ void times_table(void)
 			{
 				_putchar((n * i) + '0');
 			}
+			if ((n * i) % 9 == 0)
+			{
+				_putchar('\n');
+			}
 			_putchar(',');
 			_putchar(' ');
 		}
