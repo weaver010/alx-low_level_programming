@@ -18,8 +18,13 @@ void times_table(void)
 
 	for (n = 0; n <= 9; n++)
 	{
+		if (n > 0)
+		{
+			_putchar('\n');
+		}
 		for (i = 0; i <= 9; i++)
 		{
+			
 			if ((n * i) >= 10)
 			{
 				l_d = (n * i) % 10;
@@ -30,10 +35,6 @@ void times_table(void)
 			else
 			{
 				_putchar((n * i) + '0');
-			}
-			if (((n * i) % 9 == 0) && ((n * i) > 0))
-			{
-				_putchar('\n');
 			}
 			_putchar(',');
 			_putchar(' ');
