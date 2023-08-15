@@ -21,11 +21,19 @@ int main(void)
 	sum = 0;
 	for (n = 0; n < 50; n++)
 	{
+		if (n < 49)
+		{	
 		sum = (i + num);
 		i =num;
 		num = sum;
-
+		
 		printf("%lu, ", sum );
+		}
+		else
+		{
+			printf("%lu", sum );
+		}
+
 	}
 	return (0);
 }
