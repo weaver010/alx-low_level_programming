@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 /**
  * _abs - return absolute value for input number
  * @int : data type of input
