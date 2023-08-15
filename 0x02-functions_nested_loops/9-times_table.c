@@ -31,13 +31,16 @@ void times_table(void)
 				r = (n * i) / 10;
 				_putchar(r + '0');
 				_putchar(l_d + '0');
+				_putchar(',');
+				_putchar(' ');
 			}
 			else
 			{
 				_putchar((n * i) + '0');
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
 			}
-			_putchar(',');
-			_putchar(' ');
 		}
 	}
 }
