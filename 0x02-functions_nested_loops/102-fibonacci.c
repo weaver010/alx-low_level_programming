@@ -21,17 +21,14 @@ int main(void)
 	sum = 0;
 	for (n = 0; n < 50; n++)
 	{
-		if (n != 49)
-		{
 			sum = (i + num);
 			printf("%lu, ", sum);
 			i = num;
 			num = sum;
-		}
-		else if (n == 50)
-		{
-			printf("%lu", sum);
-		}
+			if (n != 49)
+			{
+				printf(", ");
+			}
 
 	}
 	printf("\n");
