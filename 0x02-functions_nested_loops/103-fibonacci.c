@@ -18,6 +18,8 @@ int main(void)
 
 	i=1;
 	n=0;
+	sum=0;
+
 	while(sum < 4000000)
 	{
 		sum = i +n ;
