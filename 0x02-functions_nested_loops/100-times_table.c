@@ -20,13 +20,13 @@ void print_times_table(int n)
 	j = 0;
 	if (n <= 15 && n >= 0)
 	{
-		while (i < n)
+		while (i <= n)
 		{
 			if (n > 0)
 			{
 				_putchar('\n');
 			}
-			while (j < n)
+			while (j <= n)
 			{
 				if ((i * j) >= 10)
 				{
@@ -47,7 +47,7 @@ void print_times_table(int n)
 				}
 				j++;
 			}
-			i++;
 		}
+		i++;
 	}
 }
