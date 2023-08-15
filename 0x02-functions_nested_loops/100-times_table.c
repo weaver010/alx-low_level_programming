@@ -32,15 +32,15 @@ void print_times_table(int n)
 				{
 					l_d = (i * j) % 10;
 					r = (i * j) / 10;
-					_putchar(r);
-					_putchar(l_d);
+					_putchar(r + '0');
+					_putchar(l_d + '0');
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
 				}
 				else
 				{
-					_putchar((i * j));
+					_putchar((i * j) + '0');
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
