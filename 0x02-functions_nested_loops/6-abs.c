@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _abs - return absolute value for input number
- * @int : data type of input
+ * @n : data type of input
  * Return: the absolute value
  *
  *
@@ -9,9 +9,8 @@
  *
  *
  */
-int _abs(int)
+int _abs(int n)
 {
-	int n;
 
 	if (n < 0)
 	{
