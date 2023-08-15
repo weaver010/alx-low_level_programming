@@ -16,17 +16,15 @@ void print_times_table(int n)
 	int r;
 	int j;
 
-	i = 0;
-	j = 0;
 	if (n <= 15 && n >= 0)
 	{
-		while (i <= n)
+		for (i = 0; i <= n; i++)
 		{
 			if (n > 0)
 			{
 				_putchar('\n');
 			}
-			while (j <= n)
+			for (j=0; j <= n; j++)
 			{
 				if ((i * j) >= 10)
 				{
@@ -45,9 +43,7 @@ void print_times_table(int n)
 					_putchar(' ');
 					_putchar(' ');
 				}
-				j++;
 			}
-			i++;
 		}
 	}
 }
