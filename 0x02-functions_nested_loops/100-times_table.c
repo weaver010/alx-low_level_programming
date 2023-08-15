@@ -26,24 +26,19 @@ void print_times_table(int n)
 			}
 			for (j=0; j <= n; j++)
 			{
+				_putchar(',');
+				_putchar(' ');
 				if ((i * j) >= 10)
 				{
+					_putchar(' ');
 					l_d = (i * j) % 10;
 					r = (i * j) / 10;
 					_putchar(r + '0');
 					_putchar(l_d + '0');
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
 				}
 				else
 				{
-					if (j != 0)
-					{
-						_putchar(',');
 						_putchar(' ');
-						_putchar(' ');
-					}
 					_putchar((i * j) + '0');
 				}
 			}
