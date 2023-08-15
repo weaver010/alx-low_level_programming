@@ -38,11 +38,14 @@ void print_times_table(int n)
 				}
 				else
 				{
-					_putchar((i * j) + '0');
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(' ');
+					if (n != 0)
+					{
+						_putchar((i * j) + '0');
+						_putchar(',');
+						_putchar(' ');
+						_putchar(' ');
+						_putchar(' ');
+					}
 				}
 			}
 		}
