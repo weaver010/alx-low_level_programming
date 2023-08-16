@@ -7,8 +7,6 @@ int main(void)
         float sum;
         float num;
         float i;
-        float g;
-        long c;
 
         i = 0;
         num = 1;
