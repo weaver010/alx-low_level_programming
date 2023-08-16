@@ -36,7 +36,7 @@ int main(void)
 		init=len(max)-1-len(num1);
 		while(num3>0 && init >0)
 		{
-			prnitf("%d", 0);
+			printf("%d", 0);
 			init--;
 		}
 		printf("%lu",num1);
@@ -55,5 +55,6 @@ int main(void)
 		{
 			printf("\n");
 		}
+	}
         return (0);
 }
