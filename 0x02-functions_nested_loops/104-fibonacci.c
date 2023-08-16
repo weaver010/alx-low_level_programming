@@ -1,12 +1,13 @@
+// Online C compiler to run C program online
 #include <stdio.h>
 
 int main(void)
 {
-        int n;
-        long sum;
-        long num;
-        long i;
-        long g;
+        float n;
+        float sum;
+        float num;
+        float i;
+        float g;
         long c;
 
         i = 0;
@@ -15,22 +16,12 @@ int main(void)
         for (n = 0; n < 100; n++)
         {
                 sum = (i + num);
-                if (sum <2000000000)
-                {
-                printf("%lu", sum);
-                }
-                else
-                {g=sum %100000;
-                      c=sum %100000;
-                      printf("%lu", g);
-                      printf("%lu", c);
-                }
+               
+                printf("%g   ", sum);
+                
                 i = num;
                 num = sum;
-                if (n != 99)
-                {
-                        printf(", ");
-                }
+                
 
         }
         printf("\n");
