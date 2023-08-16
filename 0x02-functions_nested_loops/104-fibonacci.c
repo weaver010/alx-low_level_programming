@@ -49,7 +49,7 @@ int main(void)
 		num4=sum2;
 		if(c!=98)
 		{
-			printf(",");
+			printf(", ");
 		}
 		else
 		{
