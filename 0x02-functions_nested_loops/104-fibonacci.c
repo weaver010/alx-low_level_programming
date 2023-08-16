@@ -27,7 +27,7 @@ int main(void)
 	long num4=0;
 	long sum2=0;
 
-        for (c = 1; n < 99; n++)
+        for (c = 1; c < 99; c++)
         {
 		if (num3>0)
 		{
@@ -39,7 +39,7 @@ int main(void)
 			prnitf("%d", 0);
 			init--;
 		}
-		printf("%lu",f1);
+		printf("%lu",num1);
 
                 sum =(num1+num2)%max;
 		sum2=num3+num4+(num1+num2)/max;
