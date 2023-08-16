@@ -1,53 +1,70 @@
 #include <stdio.h>
+/**
+ *len - get the length of the number
+ *@n:the numer that was input
+ * Return: the length
+ *
+ *
+ *
+ *
+ */
 int len(int n)
 {
 	int l;
-	l=0;
-	if (n==0)
+
+	l = 0;
+	if (n == 0)
 	{
-		return(1);
+		return (1);
 	}
-	while(n>0)
+	while (n > 0)
 	{
-		n=n/10;
-		l=l+1;
+		n = n / 10;
+		l = l + 1;
 	}
 	return (l);
 }
-
+/**
+ *main -prints the first 98 Fibonacci numbers
+ *Return: 0
+ *
+ *
+ *
+ *
+ *
+ */
 int main(void)
 {
-        int  c;
-        int  init;
-        long num1=1;
-        long num2=2;
+	int  c;
+	int  init;
+	long num1 = 1;
+	long num2 = 2;
 	long sum;
-	long max=1000000000;
-	long num3=0;
-	long num4=0;
-	long sum2=0;
+	long max = 1000000000;
+	long num3 = 0;
+	long num4 = 0;
+	long sum2 = 0;
 
-        for (c = 1; c < 99; c++)
-        {
-		if (num3>0)
+	for (c = 1; c < 99; c++)
+	{
+		if (num3 > 0)
 		{
-			printf("%lu",num3);
+			printf("%lu", num3);
 		}
-		init=len(max)-1-len(num1);
-		while(num3>0 && init >0)
+		init = len(max) - 1 - len(num1);
+		while (num3 > 0 && init > 0)
 		{
 			printf("%d", 0);
 			init--;
 		}
-		printf("%lu",num1);
-
-                sum =(num1+num2)%max;
-		sum2=num3+num4+(num1+num2)/max;
-		num1=num2;
-		num3= num4;
-		num2=sum;
-		num4=sum2;
-		if(c!=98)
+		printf("%lu", num1);
+		sum = (num1 + num2) % max;
+		sum2 = num3 + num4 + (num1 + num2) / max;
+		num1 = num2;
+		num3 = num4;
+		num2 = sum;
+		num4 = sum2;
+		if (c != 98)
 		{
 			printf(", ");
 		}
@@ -56,5 +73,5 @@ int main(void)
 			printf("\n");
 		}
 	}
-        return (0);
+	return (0);
 }
