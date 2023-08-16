@@ -9,7 +9,6 @@ int main(void)
 
         i = 0;
         num = 1;
-        sum = 0;
         for (n = 0; n < 98; n++)
         {
                 sum = (i + num);
