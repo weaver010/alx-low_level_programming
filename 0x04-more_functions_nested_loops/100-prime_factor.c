@@ -13,7 +13,7 @@ int prime(int n)
 	}
 }
 
-int main()
+int main(void)
 {
 	long o;
 	int d;
@@ -32,5 +32,5 @@ int main()
 			}
 		}
 	}
-	printf("%lu\n",d);
+	printf("%d\n",d);
 }
