@@ -32,7 +32,14 @@ int main(void)
 		}
 		else
 		{
-			printf("%d ", i);
+			if (i == 100)
+			{
+				printf("%d", i);
+			}
+			else
+			{
+				printf("%d ", i);
+			}
 		}
 	}
 	printf("\n");
