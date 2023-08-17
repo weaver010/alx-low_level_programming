@@ -20,17 +20,14 @@ void more_numbers(void)
 	{
 		for (i = 0; i <= 14; i++)
 		{
-			if (i >= 10)
+			ld = i % 10;
+			r = i / 10;
+			if (r >= 1)
 			{
-				ld = i % 10;
-				r = i / 10;
 				_putchar(r + '0');
-				_putchar(ld + '0');
 			}
-			else
-			{
-				_putchar(i + '0');
-			}
+			_putchar(ld + '0');
 		}
+		_putchar('\n');
 	}
 }
