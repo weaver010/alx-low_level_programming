@@ -1,27 +1,5 @@
 #include <stdio.h>
 /**
- *prime- ckeck if is prime
- *@n:the number
- *Return:1
- *
- *
- *
- *
- */
-int prime(int n)
-{
-	int i;
-
-	for (i = 2; i < n; i++)
-	{
-		if (n % i == 0)
-		{
-			return (0);
-		}
-	}
-	return (1);
-}
-/**
  *main - prints the largest prime factor of
  *the number "612852475143"
  *Return:0
@@ -32,23 +10,17 @@ int prime(int n)
 int main(void)
 {
 	long o;
-	int d;
 	long i;
-	long n;
 
 	o = 612852475143;
-	n = 612852475143;
-	for (i = 2; i <= n / 10000000; i++)
+	i = 612852475143;
+	for (i = 3; i < 800000; i += 2)
 	{
-		if (prime(i))
+		while ((o % i == 0) && (o != i))
 		{
-			if (o % i == 0)
-			{
-				d = i;
-			}
+			o = o / i;
 		}
 	}
-	printf("%d", d);
-	printf("\n");
+	printf("%lu\n", o);
 	return (0);
 }
