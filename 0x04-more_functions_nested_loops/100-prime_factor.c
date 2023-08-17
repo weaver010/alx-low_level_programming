@@ -48,6 +48,7 @@ int main(void)
 			}
 		}
 	}
-	printf("%d\n", d);
+	printf("%d", d);
+	printf("\n");
 	return (0);
 }
