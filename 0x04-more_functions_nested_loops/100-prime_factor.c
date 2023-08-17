@@ -11,6 +11,7 @@ int prime(int n)
 			return (0);
 		}
 	}
+	return(1);
 }
 
 int main(void)
@@ -33,4 +34,5 @@ int main(void)
 		}
 	}
 	printf("%d\n",d);
+	return (0);
 }
