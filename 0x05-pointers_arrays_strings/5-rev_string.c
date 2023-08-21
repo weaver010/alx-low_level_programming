@@ -16,7 +16,7 @@ void rev_string(char *s)
 	l = istrlen(s);
         for (; l > 0; l--)
         {
-                s[i] = s[-1 + l]);
+                s[i] = s[-1 + l];
 		i++;
         }
 }
