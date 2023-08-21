@@ -14,3 +14,4 @@ int istrlen(char *s)
         return (i);
 }
 void rev_string(char *s);
+void puts2(char *str);
