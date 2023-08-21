@@ -16,7 +16,7 @@ int main(void)
 	int sum;
 	char c;
 
-	srand(time(sum));
+	srand(time(NULL));
 	while (sum <= 4000)
 	{
 		c = rand();
