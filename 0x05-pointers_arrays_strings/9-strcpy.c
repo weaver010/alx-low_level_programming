@@ -3,13 +3,13 @@
  * *_strcpy -  copies the string pointed to by src
  *@dest:the copy
  *@src:the source
- *Return:void
+ *Return:dest
  *
  *
  *
  *
  */
-char *_strcpy(char *dest, char *src)
+char *_strcp(char *dest, char *src)
 {
 	int i;
 
@@ -17,5 +17,6 @@ char *_strcpy(char *dest, char *src)
 	{
 		dest[i] = src[i];
 	}
+	return (dest);
 }
 
