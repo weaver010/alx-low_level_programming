@@ -10,17 +10,19 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int i;
+	int i, a, b;
 
 	for (i = 0; i < istrlen(s1) + istrlen(s2); i++)
 	{
 		if (s1[i] != s2[i])
 		{
-			return (s1[i] - s2[i]);
+			a = i;
+			break;
 		}
 		else if (i == istrlen(s1) - 1)
 		{
-			return (s1[i] - s2[i]);
+			a = i;
 		}
 	}
+	return (s1[a] - s2[a]);
 }
