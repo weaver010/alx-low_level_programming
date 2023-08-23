@@ -10,7 +10,7 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int i, a, b;
+	int i, a;
 
 	for (i = 0; i < istrlen(s1) + istrlen(s2); i++)
 	{
