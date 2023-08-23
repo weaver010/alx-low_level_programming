@@ -18,7 +18,7 @@ int _strcmp(char *s1, char *s2)
 		{
 			return (s1[i] - s2[i]);
 		}
-		else if (i == strlen(s1) - 1)
+		else if (i == istrlen(s1) - 1)
 		{
 			return (s1[i] - s2[i]);
 		}
