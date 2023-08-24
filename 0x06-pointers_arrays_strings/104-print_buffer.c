@@ -70,12 +70,9 @@ while (h < j)
 ch = *(b + h + i);
 if (!isprinta(ch))
 {
-ch=46;
+ch = 46;
 }
-else
-{
 printf("%c", ch);
-}
 h++;
 }
 }
