@@ -1,66 +1,72 @@
 #include "main.h"
 /**
- * *infinite_add - function that adds two numbers.
- * @size_r: size
- * @n1: first num
- * @n2:second num
- * @r:result
- * Return:r
+ *rev - rev
+ *@str:the string
+ *Return:void
+ *
+ */
+void rev(char *str)
+{
+int a = 0;
+int j = 0;
+char t;
+while (*(str + a) != '\0')
+{
+a++;
+}
+a--;
+for (j = 0; j < a; j++, a--)
+{
+t = *(str + j);
+*(str + j) = *(str + a);
+*(str + a) = t;
+}
+}
+/**
+ * *infinite_add - adds two numbers
+ *@n1:first
+ *@n2:second
+ *@r:result
+ *@size_r:size
+ *Return:r
  */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	int l, i, b, a, o, k, j;
-
-	o = 0;
-	a = istrlen(n1);
-	b = istrlen(n2);
-	if (a > b)
-	{
-		l = a;
-	}
-	else
-	{
-		l = b;
-	}
-	if (l + 1 > size_r)
-	{
-		return (0);
-	}
-	for (i = l - 1; i >= 0; i--)
-	{
-		a--;
-		b--;
-		if (a >= 0)
-		{
-			k = n1[a] - '0';
-		}
-		else
-		{
-			k = 0;
-		}
-		if (b >= 0)
-		{
-			j = n2[b] - '0';
-		}
-		else
-		{
-			j = 0;
-		}
-		r[i] = (j + k + o) % 10 + '0';
-		o = (j + k + o) / 10;
-	}
-	if (o == 1)
-	{
-		r[l + 1] = '0';
-		if (l + 2 > size_r)
-		{
-			return (0);
-		}
-		while (l-- >= 0)
-		{
-			r[l + 1] = r[l];
-		}
-		r[0] = o + '0';
-	}
-	return (r);
+int carry = 0, i = 0, j = 0, g = 0;
+int h1 = 0, h2 = 0, total = 0;
+while (*(n1 + i) != '\0')
+i++;
+while (*(n2 + j) != '\0')
+j++;
+i--;
+j--;
+if (j >= size_r || i >= size_r)
+return (0);
+while (j >= 0 || i >= 0 || carry == 1)
+{
+if (i < 0)
+h1 = 0;
+else
+h1 = *(n1 + i)-'0';
+if (j < 0)
+h2 = 0;
+else
+h2 = *(n2 + j)-'0';
+total = h1 + h2 + carry;
+if (total >= 10)
+carry = 1;
+else
+carry = 0;
+if (g >= (size_r - 1))
+return (0);
+*(r + g) = (total % 10) + '0';
+g++;
+j--;
+i--;
+}
+if (g == size_r)
+return (0);
+*(r + g) = '\0';
+rev(r);
+return (r);
 }
