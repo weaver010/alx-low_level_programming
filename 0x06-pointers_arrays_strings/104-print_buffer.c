@@ -68,7 +68,7 @@ int ch, h = 0;
 while (h < j)
 {
 ch = *(b + h + i);
-if (isprinta(ch))
+if (!isprinta(ch))
 {
 ch=46;
 }
