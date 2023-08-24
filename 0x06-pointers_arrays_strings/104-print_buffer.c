@@ -36,7 +36,7 @@ printf("%02x", *(b + i + o));
 }
 else
 {
-printf(" ");
+printf("  ");
 
 }
 if (o % 2)
