@@ -17,7 +17,7 @@ char *rot13(char *str)
 
 	for (i = 0; i < istrlen(str); i++)
 	{
-		for (t = 0; t < strlen(b); t++)
+		for (t = 0; t < istrlen(b); t++)
 		{
 			if (str[i] == b[t])
 			{
