@@ -14,22 +14,19 @@
 char *leet(char *str)
 {
 	int i, t;
-	char c[] = {'4', 'a', 'A', '3', 'e',
-		'E', '0', 'O', 'o', '7', 't', 'T', '1', 'l', 'L'};
+	char c[] = {'4', '4', '3', '3', '0',
+		'0', '7', '7', '1', '1'};
+	char b[] = {'a', 'A', 'e', 'E', 'O', 'o',
+		't', 'T', 'l', 'L'};
 	for (i = 0; i < istrlen(str); i++)
 	{
-		for (t = 0;  t < 15; t++)
+		for (t = 0;  t < 10; t++)
 		{
-			if (t % 3 == 2 && str[i] == c[t]
-			&& str[i] >= 65 && str[i] <= 122)
+			if (str[i] == b[t])
 			{
-				str[i] = c[t - 2];
+				str[i] = c[t];
 			}
-			else if (t % 3 == 1 && str[i] == c[t]
-					&& str[i] >= 65 && str[i] <= 122)
-			{
-				str[i] = c[t - 1];
-			}
+
 		}
 	}
 	return (str);
