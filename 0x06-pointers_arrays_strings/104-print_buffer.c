@@ -41,7 +41,7 @@ printf("  ");
 }
 if (o % 2)
 {
-printf("  ");
+printf(" ");
 }
 o++;
 }
