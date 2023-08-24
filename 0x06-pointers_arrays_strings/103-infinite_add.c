@@ -1,13 +1,13 @@
 #include "main.h"
 /**
  * *infinite_add - function that adds two numbers.
- * @s: size
+ * @size_r: size
  * @n1: first num
  * @n2:second num
  * @r:result
  * Return:r
  */
-char *infinite_add(char *n1, char *n2, char *r, int s)
+char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 	int l, i, b, a, o, k, j;
 
@@ -22,7 +22,7 @@ char *infinite_add(char *n1, char *n2, char *r, int s)
 	{
 		l = b;
 	}
-	if (l + 1 > s)
+	if (l + 1 > size_r)
 	{
 		return (0);
 	}
@@ -52,7 +52,7 @@ char *infinite_add(char *n1, char *n2, char *r, int s)
 	if (o == 1)
 	{
 		r[l + 1] = '0';
-		if (l + 2 > s)
+		if (l + 2 > size_r)
 		{
 			return (0);
 		}
