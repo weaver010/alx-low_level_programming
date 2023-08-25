@@ -41,7 +41,7 @@ printf("  ");
 }
 if (o % 2)
 {
-printf("  ");
+printf(" ");
 }
 o++;
 }
@@ -99,7 +99,7 @@ int i, j;
 for (i = 0; i < size; i += 10)
 {
 j = (size - i < 10) ? size - i : 10;
-printf("%08x:", i);
+printf("%08x: ", i);
 printb(b, i, j);
 printa(b, i, j);
 printf("\n");
