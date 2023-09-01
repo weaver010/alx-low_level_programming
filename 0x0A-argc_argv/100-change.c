@@ -8,7 +8,7 @@
  *
  */
 
-int main(int __attribute__((unused)) argc, char *argv[])
+int main(argc, char *argv[])
 {
 int i, k, c = 0;
 int a[] = {25, 10, 5, 2, 1};
