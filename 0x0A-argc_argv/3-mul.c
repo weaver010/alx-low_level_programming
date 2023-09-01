@@ -45,7 +45,7 @@ m *= _atoi(argv[i]);
 }
 if (argc == 2)
 {
-printf("%d", m);
+printf("%d\n", m);
 }
 else
 {
