@@ -1,32 +1,24 @@
 #include<stdio.h>
-#include"main.h"
+#include <string.h>
+#include <ctype.h>
+#include<stdlib.h>
 /**
- *_atoi - convert a string to an integer.
- *@s:the string
- *Return:intger
- *
- *
+ * check-entry point
+ * @a:the array
+ * Return:1
  *
  */
-int _atoi(char *s)
+int check(char *a)
 {
-unsigned int n = 0;
-int si = 1;
-do {
-if (*s == '-')
+size_t i;
+for (i = 0; i < strlen(a); i++)
 {
-si *= -1;
+if (!isdigit(a[i]))
+{
+return (0);
 }
-else if (*s >= '0' && *s <= '9')
-{
-n = (n * 10) + (*s - '0');
 }
-else if (n > 0)
-{
-break;
-}
-} while (*s++);
-return (n * si);
+return (1);
 }
 /**
  * main-entry point
@@ -46,15 +38,15 @@ else
 {
 for (i = 1; i < argc; i++)
 {
-if (!(*argv[i] >= '0' && *argv[i] <= '9'))
+if (check(argv[i]))
+{
+sum += atoi(argv[i]);
+}
+else
 {
 printf("Error");
 printf("\n");
 return (1);
-}
-else
-{
-sum += _atoi(argv[i]);
 }
 }
 printf("%d\n", sum);
