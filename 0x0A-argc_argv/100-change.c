@@ -21,6 +21,7 @@ k = atoi(argv[1]);
 if (k < 0)
 {
 printf("0\n");
+return (0);
 }
 for (i = 0; i < 5 && k > 0; i++)
 {
