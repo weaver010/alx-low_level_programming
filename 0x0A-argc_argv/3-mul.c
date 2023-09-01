@@ -11,7 +11,7 @@ int main(int argc, char* argv[])
 int i,m = 1;
 for (i = 1; i < argc; i++)
 {
-m *= atoi(argv[i]);
+m *= _atoi(argv[i]);
 }
 if (argc == 2)
 {	
