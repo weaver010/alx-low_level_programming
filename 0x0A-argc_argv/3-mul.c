@@ -43,7 +43,7 @@ for (i = 1; i < argc; i++)
 {
 m *= _atoi(argv[i]);
 }
-if (argc == 2)
+if (argc == 3)
 {
 printf("%d\n", m);
 }
