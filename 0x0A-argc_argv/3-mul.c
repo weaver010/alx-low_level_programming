@@ -50,6 +50,8 @@ printf("%d", m);
 else
 {
 printf("Error");
+printf("\n");
+return (1);
 }
 return (0);
 }
