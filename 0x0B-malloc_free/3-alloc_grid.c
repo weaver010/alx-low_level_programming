@@ -18,9 +18,9 @@ for (i = 0; i < height; i++)
 {a[i] = malloc(width * sizeof(**a));
 if (a[i] == 0)
 {
-for (o = i; o > 0; o--)
+while (i--)
 {
-free(a[o]);
+free(a[i]);
 }
 free(a);
 return (NULL);
