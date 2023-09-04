@@ -24,7 +24,7 @@ else if (s1 == NULL)
 s1 = "";
 }
 k = strlen(s1);
-n = strlen(s1) + strlen(s2) - 1;
+n = strlen(s1) + strlen(s2) + 1;
 o = malloc(n);
 if (o == NULL)
 {
