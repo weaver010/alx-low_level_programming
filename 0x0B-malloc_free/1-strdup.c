@@ -27,7 +27,7 @@ return (NULL);
 
 else
 {
-for (i = 0; i < n; i++)
+for (i = 0; i <= n; i++)
 {
 o[i] = str[i];
 }
