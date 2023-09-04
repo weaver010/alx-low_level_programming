@@ -20,7 +20,7 @@ if (a[i] == 0)
 {
 for (o = i; o > 0; o--)
 {
-free(a[i]);
+free(a[o]);
 }
 free(a);
 return (NULL);
