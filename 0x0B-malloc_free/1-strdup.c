@@ -11,7 +11,7 @@
  */
 char *_strdup(char *str)
 {
-int n = strlen(str);
+int i,n = strlen(str);
 char *o;
 o = malloc(n);
 if (n == 0 || o == NULL)
@@ -20,7 +20,7 @@ return (NULL);
 }
 else
 {
-for (int i = 0; i < n; i++)
+for (i = 0; i < n; i++)
 {
 o[i] = str[i];
 }
