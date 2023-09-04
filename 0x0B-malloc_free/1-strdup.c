@@ -19,7 +19,7 @@ if (!str)
 return (NULL);
 }
 n = strlen(str);
-o = malloc(n);
+o = malloc(n + 1);
 if (o == NULL)
 {
 return (NULL);
