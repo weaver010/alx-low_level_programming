@@ -10,7 +10,7 @@ int count(char *s)
 {
 int k = 0, i, n;
 n = strlen(s);
-for (i = 0; i < n; i++)
+for (i = 0; s[i]!='\0'; i++)
 {
 if (s[i] != ' ')
 {
