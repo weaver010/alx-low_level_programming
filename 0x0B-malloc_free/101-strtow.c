@@ -8,15 +8,20 @@
 */
 int count(char *s)
 {
-int k = 0, i;
-for (i = 0; s[i] != '\0'; i++)
+int p, c, w;
+p = 0;
+w = 0;
+for (c = 0; s[c] != '\0'; c++)
 {
-if (s[i] != ' ')
+if (s[c] == ' ')
+p = 0;
+else if (p == 0)
 {
-k++;
+p = 1;
+w++;
 }
 }
-return (k);
+return (w);
 }
 /**
  * **strtow - splits a string into words
