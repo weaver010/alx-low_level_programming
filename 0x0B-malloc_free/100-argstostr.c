@@ -12,14 +12,16 @@ char *s;
 if (ac == 0 || av == NULL)
 return (NULL);
 for (i = 0; i < ac; i++)
-{for (j = 0; av[i][j]; j++)
+{
+for (j = 0; av[i][j]; j++)
+{
 t++;
 }
 t += ac;
 s = malloc(sizeof(char) * t + 1);
 if (s == NULL)
 {return (NULL);
-}		
+}
 for (i = 0; i < ac; i++)
 {
 for (j = 0; av[i][j] != '\0'; j++)
