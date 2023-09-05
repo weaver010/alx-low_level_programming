@@ -1,21 +1,18 @@
 #include<stdio.h>
 #include <stdlib.h>
-		
 /**
- * argstostr - concatenates all the arguments 
+ * argstostr - concatenates all the arguments
  * @ac:num
  * @av:array
  * Return:s
  */
-		
 char *argstostr(int ac, char **av)
-		
-{int i, n, o = 0, t = 0;
+{int i, j, o = 0, t = 0;
 char *s;
 if (ac == 0 || av == NULL)
 return (NULL);
 for (i = 0; i < ac; i++)
-{for (n = 0; av[i][n]; n++)
+{for (j = 0; av[i][j]; j++)
 t++;
 }
 t += ac;
@@ -25,9 +22,9 @@ if (s == NULL)
 }		
 for (i = 0; i < ac; i++)
 {
-for (n = 0; av[i][n]!='\0'; n++)
+for (j = 0; av[i][j] != '\0'; j++)
 {
-s[o] = av[i][n];
+s[o] = av[i][j];
 o++;
 }
 s[o++] = '\n';
