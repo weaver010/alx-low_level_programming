@@ -47,7 +47,7 @@ if (str[i] == ' ' || str[i] == '\0')
 if (c)
 {
 t = i;
-o =  malloc(sizeof(char) * (c - 1));
+o =  malloc(sizeof(char) * (c + 1));
 if (o == NULL)
 return (NULL);
 while (b < t)
