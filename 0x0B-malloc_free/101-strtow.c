@@ -37,7 +37,7 @@ if (w == 0)
 {
 return (NULL);
 }
-s = malloc(sizeof(char *) * (w + 2));
+s = malloc(sizeof(char *) * (w + 1));
 if (s == NULL)
 return (NULL);
 for (i = 0; i <= n; i++)
