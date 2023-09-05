@@ -37,7 +37,7 @@ if (w == 0)
 {
 return (NULL);
 }
-s = malloc(sizeof(char *) * (w+2));
+s = malloc(sizeof(char *) * (w + 2));
 if (s == NULL)
 return (NULL);
 for (i = 0; i <= n; i++)
@@ -47,7 +47,7 @@ if (str[i] == ' ' || str[i] == '\0')
 if (c)
 {
 t = i;
-o =  malloc(sizeof(char) * (c));
+o =  malloc(sizeof(char) * (c - 1));
 if (o == NULL)
 return (NULL);
 while (b < t)
