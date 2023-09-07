@@ -15,8 +15,7 @@ if (s == NULL)
 {
 exit(98);
 }
-else
-{
+
+
 return (malloc(b));
-}
 }
