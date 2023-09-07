@@ -10,7 +10,7 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-size_t i, j, o = 0;
+unsigned int i, j, o = 0;
 char *s;
 if (s1 == NULL && s2 == NULL)
 {
@@ -29,7 +29,7 @@ if (n >= strlen(s2))
 {
 n = strlen(s2);
 }
-s = malloc(strlen(s1) + n);
+s = malloc(strlen(s1) + n + 1);
 if (s == NULL)
 {
 return (NULL);
