@@ -7,12 +7,12 @@
  * 
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
-{size_t i;
+{char *s;
+size_t i;
 if(nmemb==0||size==0)
 {
 return(NULL);
 }
-char *s;
 s=malloc(nmemb*size);
 if(s==NULL)
 {
