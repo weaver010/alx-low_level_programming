@@ -29,7 +29,7 @@ if (n >= strlen(s2))
 {
 n = strlen(s2);
 }
-s = malloc(strlen(s1) + n + 1);
+s = malloc(strlen(s1) + n);
 if (s == NULL)
 {
 return (NULL);
