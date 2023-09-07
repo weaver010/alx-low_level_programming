@@ -38,10 +38,11 @@ for (i = 0; i < strlen(s1); i++)
 {
 s[i] = s1[i];
 }
-for (j = strlen(s1); j <= strlen(s1) + n+1; j++)
+for (j = strlen(s1); j < strlen(s1) + n; j++)
 {
 s[j] = s2[o];
 o++;
 }
+s[j] = '\0';
 return (s);
 }
