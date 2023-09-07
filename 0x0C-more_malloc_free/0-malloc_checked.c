@@ -17,5 +17,5 @@ exit(98);
 }
 
 
-return (malloc(b));
+return (s);
 }
