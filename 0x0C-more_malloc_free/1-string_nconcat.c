@@ -43,6 +43,6 @@ for (j = strlen(s1); j < strlen(s1) + n; j++)
 s[j] = s2[o];
 o++;
 }
-s[j]='\0';
+s[j++]='\0';
 return (s);
 }
