@@ -44,3 +44,4 @@ int wildcmp(char *s1, char *s2);
 char *create_array(unsigned int size, char c);
 void *malloc_checked(unsigned int b);
 void *_calloc(unsigned int nmemb, unsigned int size);
+int *array_range(int min, int max);
