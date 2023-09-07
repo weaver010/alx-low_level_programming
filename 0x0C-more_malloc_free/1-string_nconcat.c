@@ -3,7 +3,7 @@
 /**
  *  *string_nconcat -  that concatenates two strings
  *  @s1:the 1th string
- * @s2:the 2 th string
+ * @s2:the 2th string
  *@n:num of byte
  * Return:pointer
  *
@@ -38,7 +38,7 @@ for (i = 0; i < strlen(s1); i++)
 {
 s[i] = s1[i];
 }
-for (j = strlen(s1); j < strlen(s1) + n + 1; j++)
+for (j = strlen(s1); j < strlen(s1) + n; j++)
 {
 s[j] = s2[o];
 o++;
