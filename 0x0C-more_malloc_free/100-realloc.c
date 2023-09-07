@@ -1,11 +1,11 @@
 #include<stdlib.h>
 /**
  *  *_realloc -  reallocates a memory
- *  @min:the size
- *  @max:the size
+ *  @old_size:the size
+ *  @new_size:the size
  * @ptr:the copy
  *  Return:s
- * 
+ *
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
@@ -42,7 +42,7 @@ if (new_size < old_size)
 for (i = 0; i < new_size; i++)
 {
 s[i] = t[i];
-} 
+}
 }
 free(ptr);
 return (s);
