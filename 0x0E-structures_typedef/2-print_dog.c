@@ -22,19 +22,19 @@ printf("Name: %s\n", d->name);
 }
 if (d->age < 0)
 {
-printf("age: (nil)\n");
+printf("Age: (nil)\n");
 }
 else
 {
-printf("age: %f\n", d->age);
+printf("Age: %f\n", d->age);
 }
 if (d->owner == NULL)
 {
-printf("owner: (nil)");
+printf("Owner: (nil)");
 }
 else
 {
-printf("owner: %s", d->owner);
+printf("Owner: %s", d->owner);
 }
 }
 }
