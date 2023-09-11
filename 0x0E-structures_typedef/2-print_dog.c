@@ -20,6 +20,10 @@ else
 {
 printf("Name: %s\n",d->name);
 }
+if(d->age)
+{
+	printf("age: %f\n",d->age);
+}
 if(d->owner==NULL)
 {
 printf("owner: (nil)\n");
