@@ -14,27 +14,27 @@ if(d!=NULL)
 {
 if(d->name==NULL)
 {
-printf("Name:(nil)\n");
+printf("Name: (nil)\n");
 }
 else
 {
-printf("Name:%s\n",d->name);
+printf("Name: %s\n",d->name);
 }
 if (d->age<0)
 {
-printf("age:(nil)\n");
+printf("age: (nil)\n");
 }
 else
 {
-printf("age:%f\n",d->age);
+printf("age: %f\n",d->age);
 }
 if(d->owner==NULL)
 {
-printf("owner:(nil)\n");
+printf("owner: (nil)\n");
 }
 else
 {
-printf("owner:%s",d->owner);
+printf("owner: %s\n",d->owner);
 }
 }
 }
