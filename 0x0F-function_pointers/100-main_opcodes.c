@@ -23,7 +23,7 @@ exit(2);
 s = (char *)main;
 for (i = 0; i < b; i++)
 {
-if (i == b--)
+if (i == b - 1)
 {
 printf("%02hhx\n", s[i]);
 break;
