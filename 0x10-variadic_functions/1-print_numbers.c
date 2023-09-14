@@ -20,11 +20,9 @@ int o = va_arg(s, int);
 printf("%d", o);
 if (i < n - 1 && separator != NULL && n)
 {
-_putchar(*separator);
-_putchar(*(separator + 1));
+printf("%s", separator);
 }
-
 }
 va_end(s);
-_putchar('\n');
+printf("\n");
 }
