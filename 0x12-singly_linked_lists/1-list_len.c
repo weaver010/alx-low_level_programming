@@ -4,7 +4,9 @@ size_t list_len(const list_t *h)
 int o=0;
 list_t *copy;
 copy=malloc(sizeof(list_t));
-copy=h;
+copy->str=h->str;
+copy->len=h->len;
+copy->next=h->next;
 while(copy)
 {
 
