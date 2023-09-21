@@ -4,9 +4,8 @@ size_t list_len(const list_t *h)
 while(h)
 {
 
-=h->next;
+h=h->next;
 o++;
 }
-free(h);
 return(o);
 }
