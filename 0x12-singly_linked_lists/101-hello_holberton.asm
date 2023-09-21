@@ -9,4 +9,4 @@ main:
 	call		printf
 
 	section		.data
-s:	db		'Hello, Holberton',0xa,0
+s:	db		"Hello, Holberton",0xa,0
