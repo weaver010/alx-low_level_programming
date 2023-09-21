@@ -17,6 +17,6 @@ s->str=strdup(str);
 s->len=strlen(str);
 s->next=*head;
 *head=s;
-return(*head);
+return(s);
     
 }
