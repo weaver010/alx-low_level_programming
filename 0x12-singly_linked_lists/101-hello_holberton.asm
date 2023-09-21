@@ -4,7 +4,7 @@
 
 	section		.text
 
-main:	
+main:
 	mov		edi,s
 	mov		eax,0
 	call		printf
