@@ -10,4 +10,4 @@ main:
 	call		printf
 	ret
 	section		.data
-s:	db		"Hello, Holberton\n",0
+s:	db		"Hello, Holberton",0xa,0
