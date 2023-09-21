@@ -1,6 +1,6 @@
 #include"lists.h"
 void free_list(list_t *head)
-{  list_t s;
+{  list_t *s;
 
     while(head)
 {
