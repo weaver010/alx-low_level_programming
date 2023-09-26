@@ -7,7 +7,7 @@
  */
 int len(const listint_t *head)
 {
-listint_t *c, *s;
+const listint_t *c, *s;
 int i = 0;
 if (head == NULL || head->next == NULL)
 return (0);
@@ -51,7 +51,7 @@ if (l == 0)
 {
 for (; head != NULL; l++)
 {
-printf("[%p] %d\n", head, head->n);
+printf("[%p] %d\n", (void *)head, head->n);
 head = head->next;
 }
 }
@@ -59,10 +59,10 @@ else
 {
 for (i = 0; i < l; i++)
 {
-printf("[%p] %d\n", head, head->n);
+printf("[%p] %d\n", (void *)head, head->n);
 head = head->next;
 }
-printf("-> [%p] %d\n", head, head->n);
+printf("-> [%p] %d\n", (void *)head, head->n);
 }
 return (l);
 }
