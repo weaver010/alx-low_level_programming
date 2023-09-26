@@ -7,6 +7,10 @@ if (head == NULL)
 {
 return (0);
 }
+else if (*head == NULL)
+{
+return (0);
+}
 dat = (*head)->n;
 c = (*head)->next;
 free(*head);
