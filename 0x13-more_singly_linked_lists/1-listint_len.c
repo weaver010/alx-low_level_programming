@@ -1,6 +1,6 @@
 #include"lists.h"
 /**
- * print_listint - print
+ * listint_len - print
  * @h:the node
  * Return:o
  *
@@ -18,5 +18,4 @@ h = h->next;
 o++;
 }
 return (o);
-}   
-
+}
