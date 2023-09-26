@@ -1,8 +1,16 @@
 #include"lists.h"
+/**
+ * pop_listint - delete
+ * @head:the head node
+ * Return:dat
+ *
+ *
+ *
+ */
 int pop_listint(listint_t **head)
 {
-	listint_t *c;
-	int dat;
+listint_t *c;
+int dat;
 if (head == NULL)
 {
 return (0);
