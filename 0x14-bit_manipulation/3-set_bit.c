@@ -7,6 +7,6 @@ return(-1);
 }
 else
 {
-    return(*n = (((*n&0)|1) << index)|*n );
+     return(*n = ((1UL << index) | *n));
 }
 }
