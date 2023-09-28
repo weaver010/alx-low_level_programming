@@ -3,7 +3,7 @@ void o(unsigned long int c)
 {
 if (c>0)
 {
-   o(c/2);
+   o(c>>1);
   _putchar((c&1)+'0');
 }
 
