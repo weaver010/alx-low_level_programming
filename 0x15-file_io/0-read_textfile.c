@@ -13,6 +13,7 @@ if(filename)
 	ter = malloc(letters*sizeof(char));
 	s = read(f, &ter[0], letters);
 	o = write(STDOUT_FILENO, &ter[0], s);
+	free(ter);
 	close(f);
 	return (o);
 }
