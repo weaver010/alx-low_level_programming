@@ -9,7 +9,9 @@ return (-1);
 f = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 o = write(f, text_content, strlen(text_content));
 if (f == -1 || o == -1)
+{
 return (-1);
+}
 close(f);
 return (1);
 }
