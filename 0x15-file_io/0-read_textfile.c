@@ -11,8 +11,8 @@ if(filename)
 	if (f == -1)
 	return (0);
 	ter = malloc(letters*sizeof(char));
-	s = read(f, &ter[0], letters);
-	o = write(STDOUT_FILENO, &ter[0], s);
+	s = read(f, ter, letters);
+	o = write(STDOUT_FILENO, ter, s);
 	free(ter);
 	close(f);
 	return (o);
