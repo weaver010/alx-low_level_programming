@@ -2,7 +2,7 @@
 int create_file(const char *filename, char *text_content)
 {
 int f, o;
-if (filename == NULL ||text_content != NULL)
+if (filename == NULL )
 {
 return (-1);
 }
