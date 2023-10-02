@@ -5,10 +5,6 @@ char *ter;
 ssize_t f;
 ssize_t n;
 ssize_t o;
-if (filename || letters)
-{
-return (0);
-}
 f = open(filename, O_RDONLY);
 if (f == -1)
 {
