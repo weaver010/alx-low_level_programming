@@ -3,8 +3,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 char *ter;
 ssize_t f;
-ssize_t w;
-ssize_t t;
+ssize_t n;
+ssize_t o;
 if (filename || letters)
 {
 return (0);
@@ -14,10 +14,10 @@ if (f == -1)
 {
 return (0);
 }
-buf = malloc(sizeof(char) * letters);
-t = read(f, buf, letters);
-w = write(STDOUT_FILENO, buf, t);
-free(buf);
+ter = malloc(sizeof(char) * letters);
+o = read(f, ter, letters);
+n = write(STDOUT_FILENO, ter, o);
+free(ter);
 close(f);
-return (w);
+return (n);
 }
