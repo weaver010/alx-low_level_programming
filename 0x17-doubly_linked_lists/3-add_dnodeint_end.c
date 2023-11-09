@@ -1,7 +1,7 @@
 #include"lists.h"
 /**
- *add_dnodeint -add node in begin
- *@h: h
+ *add_dnodeint_end -add node in end
+ *@head: h
  * @n:n
  *Return:l_list
  *
