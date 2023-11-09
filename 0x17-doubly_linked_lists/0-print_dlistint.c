@@ -1,4 +1,4 @@
-#include"list.h"
+#include"lists.h"
 /**
  *print_dlistint - print d linked list
  *@h: h
