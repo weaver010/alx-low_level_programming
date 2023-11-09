@@ -21,6 +21,6 @@ if (*head != NULL)
 {
 (*head)->prev = s;
 }
-head = s;
+*head = s;
 return (*head);
 }
