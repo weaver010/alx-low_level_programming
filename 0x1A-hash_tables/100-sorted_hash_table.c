@@ -150,7 +150,7 @@ return (1);
 
 /**
  * shash_table_get - get value
- * @ht:hash table 
+ * @ht:hash table
  * @key: key
  *
  * Return: o->value
@@ -216,7 +216,7 @@ printf("}\n");
 void shash_table_print_rev(const shash_table_t *ht)
 {
 shash_node_t *o;
-char f = 0; 
+char f = 0;
 
 if (ht == NULL || ht->array == NULL)
 {
