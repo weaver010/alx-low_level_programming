@@ -16,7 +16,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (ht == NULL || key == NULL || *key == '\0' || value == NULL)
 	{
 		return (0);
-    }
+	}
 	o = strdup(value);
 	if (o == NULL)
 	{
@@ -44,8 +44,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (s->key == NULL)
 	{
 		free(s);
-		return (0);
-	}
+		return (0); }
 	s->value = o;
 	s->next = ht->array[j];
 	ht->array[j] = s;
