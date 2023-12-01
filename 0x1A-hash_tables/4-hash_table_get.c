@@ -25,12 +25,12 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	{
 		s = s->next;
 	}
-	if(s == NULL) 
+	if (s == NULL)
 	{
-	    	return (NULL);
+		return (NULL);
 	}
 	else
 	{
-	    	return (s->value);
+		return (s->value);
 	}
 }
